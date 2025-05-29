@@ -1,0 +1,25 @@
+Iris data set analysis data encoding using amplitude encoding 
+https://www.researchgate.net/publication/380286543_A_Modified_Depolarization_Approach_for_Efficient_Quantum_Machine_Learning
+
+
+This article addresses the gap in research when it comes for data encoding specifically for PCA" 2022 
+uses: ensemble average density matrix 
+methods for uncentered and centered data 
+"A key assumption in this algorithm is that the covariance matrix Q can be encoded into a density matrix ρ"
+https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.030334#:~:text=In%20this%20case%2C%20loss%20of,to%20those%20given%20by%20PCA.
+
+
+"Quantum Hamiltonian-Based Models (QHBMs)" suggested 
+QHBMs could be used for classical to quantum data processing-https://arxiv.org/pdf/1910.02071
+
+https://arxiv.org/abs/2004.01372
+
+
+For the DWAVE repo of the Wierzbinzki paper QA starts at an easy hamiltonian and goes to hamitonian of interest the data is alreaady endoded 
+the the coupling matrix in the hamiltonian. 
+Modulairty matrix assigns weights to these connections, mapped to the quantum hamiltonian. 
+DWAVE repo - https://github.com/alecrimi/clustering-dwave
+
+
+
+

@@ -1,0 +1,31 @@
+requests[socks]>=2.25,<3
+urllib3>=1.26.0,<3
+pydantic>=2,<3
+homebase>=1.0.0,<2
+python-dateutil>=2.7,<3
+click>=7,<9
+plucky>=0.4.3,<0.5
+diskcache>=5.2.1,<6
+packaging>=19
+werkzeug>=2.2,<3
+typing-extensions>=4.5.0,<5
+authlib>=1.2,<2
+orjson>=3.10
+
+# bring in py312 semantics of importlib.metadata.entry_points()
+importlib_metadata>=5.0.0
+
+# optional bqm support
+# note: dqm supported in dimod>0.9.6
+# note: cqm supported in dimod>=0.10.0
+dimod>=0.10.5,!=0.11.4
+numpy>=1.17.3
+
+# optional nlm support in dwave-optimization>0.1
+dwave-optimization>=0.1.0
+
+# for solver mocks
+dwave-networkx>=0.8.10
+
+# dev requirements
+reno~=4.0

@@ -1,0 +1,60 @@
+https://www.nature.com/articles/nphys3029
+https://www.science.org/doi/full/10.1126/sciadv.abg2589
+https://arxiv.org/html/2501.07891v1
+
+
+"Data encoding Data representation is crucial for the success of machine learn- ing models. For classical machine learning, 
+the problem is how to represent the data numerically, so that it can be best processed by a classical machine learn- ing algorithm. 
+For quantum machine learning, this question is similar, but more fundamental: how to represent and efficiently input the data 
+into a quantum system, so that it can be processed by a quantum machine learning algorithm. This is usually referred to as data 
+encoding and is a critical part of quantum machine learning algorithms that directly affect their power." 
+
+It does, however, only use a constant depth quantum circuit, making it amenable to current quantum hardware. 
+For a general unitary operator from [12] this method corresponds to the parameters k = 1,P0 = Z. 
+In Qiskit the corresponding function is called ZFeatureMap. For k = 2, P0 = Z, P1 = ZZ we get the Qiskit ZZFeatureMap circuit, 
+which contains layers of Hadamard gates interleaved with qubit rotations and entangling blocks. 
+These data encoding circuits were used in [1]. These authors call them “easy quantum model” and “quantum neural network” respectively."
+
+- https://www.iccs-meeting.org/archive/iccs2022/papers/133530232.pdf
+I USED Qiskit ZZFeatureMap circuit
+
+
+"Block encoding"? - https://arxiv.org/pdf/2401.06240 
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8373170/#:~:text=The%20quantum%20version%20of%20PCA,matrix%20with%20the%20largest%20eigenvalues.
+
+
+Discussion about not so promising, "of course, processing classical data in this way requires a technique to efficiently prepare classical 
+data as quantum states, e.g. QRAM."
+-https://quantumcomputing.stackexchange.com/questions/29590/applications-of-quantum-principal-component-analysis 
+
+
+
+"A quantum algorithm for performing PCA was presented in Ref. [68]. The algorithm: (1) encodes Σ in a quantum density matrix ρ 
+(exploiting the fact that Σ is a positive semidefinite matrix), (2) prepares many copies of ρ, (3) performs the exponential 
+SWAP operation on each copy and a target system, and (4) performs quantum phase estimation to determine the eigenvalues. 
+However, given the constraint of only 5 qubits on IBM’s computer, preparing many copies of ρ is not possible. Hence, we consider a 
+simpler algorithm as follows." - https://arxiv.org/pdf/1804.03719v1
+
+
+
+
+GITHUB REPO Quantum "Computing for Programmers" - https://github.com/qcc4cp/qcc/tree/main
+https://github.com/qcc4cp/qcc/blob/main/src/quantum_pca.py how he sets up the gates? 
+
+
+DWAVE repo - https://github.com/alecrimi/clustering-dwave
+
+The adjacency matrix of the network (which defines the connections between nodes) is encoded into the coupling matrix in the Hamiltonian.
+The modularity matrix is used to assign weights to these connections, encoding the structure of the network. This is mapped to the quantum Hamiltonian.
+- Hamiltonian-based optimization
+
+
+KEY TAKE AWAYS FROM PAPER: https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.030334#:~:text=In%20this%20case%2C%20loss%20of,to%20those%20given%20by%20PCA.
+"The original QPCA algorithm using QPE is impractical for NISQ devices due to high resource requirements.
+Variational methods (VQSD, VQSE) are more practical and could be used for eigenvalue decomposition in your project.
+State preparation is a challenge—using random sampling instead of deterministic preparation can significantly reduce computational costs.
+You might consider implementing QPCA via a variational approach rather than the standard QPE-based method."
+Variational Quantum Algorithms (VQAs):
+Variational Quantum State Diagonalization (VQSD)
+Variational Quantum Spectrum Estimation (VQSE)
+
